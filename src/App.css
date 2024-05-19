@@ -1,38 +1,175 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  height:100vh;
+  color: #563300 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #8a2be2 !important;
+}
+
+.App-title{
+  text-decoration: underline;
+  text-decoration-color: #32cd32 !important;
+  text-decoration-thickness: 8px;
+  text-decoration-style: dotted;
+}
+
 .App {
+  font-family: 'Arvo', serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  max-width: 100%;
+  background-color: aliceblue;
+  font-size:1.3125rem;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #8a2be2 !important;
+  padding:20px 0;
+  color: white !important;
+  max-width: 100%;
+}
+
+.App-header h1{
+  color: aliceblue !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.App-body{
+  text-align:left;
+
+  line-height: 1.6;
+}
+
+.mail-form{
+  color: #563300 !important;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 100%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #32cd32 !important;
   color: white;
+  border: none !important;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #8a2be2 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer {
+  //height: 200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  height: 100px;
+}
+
+.footer-oben{
+  font-family: "Handlee", cursive;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #32cd32;
+  border-radius: 6px;
+  padding:10px 0;
+  color:aliceblue;
+  border: 2px solid #8a2be2;
+  text-align:center;
+}
+
+.buyMeACoffeeWrapper{
+  text-align:center;
+}
+
+.buyMeACoffeeWrapper a{
+  text-decoration: none;
+  background-color: #e2e2e2;
+  padding: 25px 15px;
+  border-radius: 6px;
+  border: 1px solid #8a2be2;
+ }
+
+.footer-oben:hover{
+  background-color: aliceblue;
+  border: 2px solid #8a2be2;
+  color:inherit !important;
+}
+
+.footer-wrapper a:hover{
+  color:#563300 !important;
+}
+
+.footer-wrapper a{
+  /*text-decoration: none !important;*/
+  color:#8a2be2 !important;
+}
+
+/* Responsive stiller */
+@media (max-width: 600px) {
+  .form {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input[type="text"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .App-header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
   }
 }
