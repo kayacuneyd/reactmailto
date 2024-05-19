@@ -70,8 +70,8 @@ function Description() {
         <h2>Usage</h2>
         <ol>
           <li>
-            Open your browser and navigate to <code>http://localhost:3000</code>
-            .
+            Open your browser and navigate to{" "}
+            <code>https://quickmailnk.netlify.app/</code>.
           </li>
           <li>
             Fill in the fields for the email recipient (To), CC, BCC, subject,
